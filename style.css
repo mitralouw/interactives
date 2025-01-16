@@ -1,0 +1,98 @@
+body {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #f5f4eb;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+  }
+  
+  h1{
+    font-size: 2em;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 1.4em;
+  }
+  
+  
+  #byline{
+    font-size: 1.2em;
+    font-style: italic;
+    
+  }
+  
+  p{
+    font-size: 1.3em;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+  }
+  
+  .img-container{
+    width:100%;
+  }
+  
+  img{
+    margin: auto;
+    display: block;
+    padding-top: 1.3em;
+  }
+  
+  #contact {
+    border: 1px solid black;
+    padding: 10px;
+    font-style: italic;
+    text-align: center;
+    font-size: .9em;
+  }
+  
+  #content{
+    width: 50%;
+    margin: auto;
+  }
+  
+  @media(orientation: portrait) {
+    #content {
+      width:100%;
+    }
+  }
+  
+  ul{
+    font-size: 1.3em;
+    line-height: 1.3em;
+    padding-bottom: 0px;
+    padding-top: 0;
+    line-height: 1.3em;
+  }
+   
+  ul2{
+    line-height: .3em;
+  }
+  
+  li{
+    padding: 10px;
+  }
+  
+  #italic {
+    font-style: italic;
+  }
+  
+  details{
+    background: #bfdae0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em 0.5em 0;
+    border-radius: 8px;
+  }
+  
+  details[open] {
+    padding: 0.5em;
+  
+  }
+  
+  summary{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #bfdae0;
+    font-size: 1.1em;
+    margin: -0.5em -0.5em 0;
+    padding: .5em;
+    border-radius: 8px;
+  }
