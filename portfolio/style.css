@@ -1,9 +1,9 @@
 body {
     background-color: #f5f4eb;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', sans-serif; /* using the google font I added */
     }
 
-/*desktop orientation*/
+/*basic content styling */
 #content {
     width: 50%;
     margin: auto;
@@ -11,13 +11,14 @@ body {
     font-size: 1.5em;
     padding-top: 7%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* centering the content */
     justify-content: center;
     align-items: center;
-    height: 50vh; /* Ensure the container takes the full height of the viewport */
+    height: 50vh; /* Making sure the container takes the full height of the viewport */
     font-size: 1em;
 }
 
+/* different content styling for different pages */
 #skill-content {
     width: 70%;
     display: flex;
@@ -43,7 +44,6 @@ body {
 
 
 .nav-item {
-   /* margin: auto;*/
     padding: 10px;
 }
 
@@ -56,20 +56,20 @@ body {
     font-weight: bold;
     font-size: 2em;
 }
-
+/* getting the flourish embeds to line up with text */
 .flourish-embed {
     width: 100%;
-    height: auto; /* Adjust height as needed */
-    margin: 0; /* Remove any default margins */
-    padding: 0; /* Remove any default padding */
+    height: auto; 
+    margin: 0; 
+    padding: 0; 
 }
 
 .flourish-embed iframe {
     width: 100%;
-    height: 100%; /* Ensure the iframe takes the full height of the container */
+    height: 100%; /* ensuring the iframe takes the full height of the container */
 }
 
-.resized-image {
+.resized-image { /* resizing my headshot*/
     width: 300px;
     height: 300px;
     display: flex;
@@ -124,8 +124,8 @@ body {
 
 .stories-container {
     display: grid;
-    gap: 20px; /* Adjust spacing between stories */
-    grid-template-columns: 1fr; /* Default to single column for smaller screens */
+    gap: 20px; 
+    grid-template-columns: 1fr; /* Defaulting to single column for smaller screens */
     
 }
 
@@ -144,6 +144,7 @@ body {
     font-weight: bold;
 }
 
+/*resizing all story images */
 .story-image {
     width: 200px;
     height: auto;
@@ -163,7 +164,7 @@ body {
    
     
 }
-/*phone*/
+/*phone orientation*/
 @media (orientation:portrait) {
     #content {
         width: 70%;

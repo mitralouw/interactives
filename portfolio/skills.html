@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> <!-- linking google fonts and stylesheet and Prism -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -11,12 +11,12 @@
         href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
     <link href="prism.css" rel="stylesheet" /> <!-- Link to Prism CSS -->
-    <script src="prism.js"></script>
+    <script src="prism.js"></script> <!-- Link to Prism Java -->
     <title>Skill Showcase</title>
 
 </head>
 
-<body>
+<body> <!-- creating nav bar and linking to other pages -->
     <h1 id="name" class="name">Mitra Nourbakhsh</h1>
     <div id="nav-bar">
         <div class="nav-item">
@@ -33,11 +33,11 @@
         </div>
     </div>
 
-    <div id="skill-content">
+    <div id="skill-content"> 
         <h2 id="header">Skill Showcase: investigating of Evanston's trees</h2>
         <p> Evanston is a city that values its trees. In fact, the city’s data portal maintains a database of
             every single tree in the city — dead or alive — that lists its location and species. I decided to do a
-            deep-dive into this data portal and see if I could find any interesting patterns. Using Python and
+            deep-dive into <a href="Trees.csv">this dataset</a> and see if I could find any interesting patterns. Using Python and
             Flourish, I performed exploratory data analysis, asked questions about what I found, and wrote the
             answers into a short story complete with explanatory data visualizations. This is my process; an
             abridged version of it, at least.
@@ -55,8 +55,7 @@
             Trees! Fun. So, I downloaded the dataset as a csv file and uploaded that into Python (I use a Jupyter
             notebook
             as a holdover from my data science course sequence but CoLab would probably have been easier). It was time
-            to
-            start exploring.
+            to start exploring.
         </p>
 
         <p>
@@ -64,9 +63,9 @@
             immediately noticed the column names needed cleaning, so I renamed the “DBH” column to “diameter” and made
             the “Common Name” column one word for easier indexing. 
         </p>
-        <div class="box">
+        <div class="box"> <!-- adding a python code snippet using prism -->
             <pre>
-                <code class = "language-python line-numbers" data-prismjs-copy="copy the HTML snippet!">
+                <code class = "language-python line-numbers" data-prismjs-copy="copy the Python snippet!">
                 trees = trees.rename(columns = {'DBH':'diameter', 'Common name':'common_name'})
     
                 </code>
@@ -79,7 +78,7 @@
 
         <div class="box">
             <pre>
-                <code class = "language-python line-numbers" data-prismjs-copy="copy the HTML snippet!">
+                <code class = "language-python line-numbers" data-prismjs-copy="copy the Python snippet!">
                     trees[['na', 'Longitude', 'Latitude']] = trees['the_geom'].str.split(' ', expand = True)
                     trees.Longitude = trees['Longitude'].str.replace('(', '')
                     trees.Latitude = trees['Latitude'].str.replace(')', '')
@@ -94,7 +93,7 @@
             uploaded it into Flourish --- a fantastic tool for creating data visualizations. I decided to color code 
             the dots by genus (species made the map too cluttered) and see if there were any patterns.
         </p>
-
+<!-- embedding a flourish map -->
         <div class="flourish-embed flourish-map" data-src="visualisation/21927897"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21927897/thumbnail" width="100%" alt="map visualization" /></noscript></div>
             
         <p>
@@ -106,7 +105,7 @@
 
         <div class="box">
             <pre>
-                <code class = "language-python line-numbers" data-prismjs-copy="copy the HTML snippet!">
+                <code class = "language-python line-numbers" data-prismjs-copy="copy the Python snippet!">
                     removed_trees_countby = pd.DataFrame(removed_trees.Genus.value_counts())
                     trees_countby = pd.DataFrame(trees.Genus.value_counts())
                     tree_counts_merged = pd.merge(trees_countby, removed_trees_countby, on = 'Genus', how = 'outer')
