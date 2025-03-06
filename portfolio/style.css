@@ -18,6 +18,17 @@ body {
     font-size: 1em;
 }
 
+#skill-content {
+    width: 70%;
+    display: flex;
+    margin: auto;
+
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+
+}
 
 .nav-item {
    /* margin: auto;*/
@@ -30,9 +41,22 @@ body {
 }
 
 
+
 .highlight {
     font-weight: bold;
     font-size: 2em;
+}
+
+.flourish-embed {
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+}
+
+.flourish-embed iframe {
+    width: 100%;
+    height: 100%; /* Ensure the iframe takes the full height of the container */
 }
 
 .resized-image {
@@ -44,9 +68,33 @@ body {
     margin-bottom: 15px;   
 }
 
+.text-column {
+    width: 120%;
+    padding-left: 0px;
+    padding-top: 700px;
+}
+
+.image-column {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-section {
+    margin-bottom: 50px;
+}
+
+
 .contactinfo {
     font-weight: light;
-    font-size: .7em;
+    font-size: .75em;
     padding-top: 0;
     padding-bottom: 0;
     margin-top: 0;
@@ -102,6 +150,7 @@ body {
     .stories-container {
         grid-template-columns: repeat(3, 1fr); /* Three columns for desktop */
     }
+   
     
 }
 /*phone*/
@@ -110,7 +159,7 @@ body {
         width: 70%;
         line-height: 1.5em;
         font-size: 1.1em;  
-        padding-top: 15%;
+        padding-top: 25%;
     }
     #nav-bar {
         flex-direction: column;
@@ -119,6 +168,10 @@ body {
     .stories-container{
         padding-top: 1700px;
     }
+    h2{
+        padding-top: 90px;
+      }
+    
 }
 
 #nav-bar {
