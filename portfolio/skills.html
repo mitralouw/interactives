@@ -39,11 +39,11 @@
             every single tree in the city — dead or alive — that lists its location and species. I decided to do a
             deep-dive into <a href="Trees.csv">this dataset</a> and see if I could find any interesting patterns. Using Python and
             Flourish, I performed exploratory data analysis, asked questions about what I found, and wrote the
-            answers into a short story complete with explanatory data visualizations. This is my process; an
-            abridged version of it, at least.
-        </p>
+            answers into a short story complete with explanatory data visualizations. <strong>This is my process; an
+                abridged version of it, at least. 
+            </p></strong> 
         <p>
-            Evanston’s Open Data Portal (most cities have something similar) is a fantastic resource for the intrepid
+            Evanston’s <a href = "https://data.cityofevanston.org/"> Open Data Portal </a> (most cities have something similar) is a fantastic resource for the intrepid
             data journalist. Simply select one of the eight sections and start scrolling; all the data is freely
             available and easy to download in .csv format. Some datasets even have built-in map views that do some
             of the work for you. The one that piqued my interest was found in the “Parks, Recreation and Community
@@ -52,7 +52,7 @@
         </p>
 
         <p>
-            Trees! Fun. So, I downloaded the dataset as a csv file and uploaded that into Python (I use a Jupyter
+            Trees! Fun. So, I downloaded the dataset as a .csv file and uploaded that into Python (I use a Jupyter
             notebook
             as a holdover from my data science course sequence but CoLab would probably have been easier). It was time
             to start exploring.
@@ -88,7 +88,7 @@
         </div>
         <p>
             Next, I wanted to see if there were any patterns in the data. I got the counts of trees in each life 
-            cycle stage: Active Tree, Planting Site, Removed Tree or Stump. The removed trees in particular seemed 
+            cycle stage: "Active Tree", "Planting Site", "Removed Tree" or "Stump". The removed trees in particular seemed 
             like an interesting thing to dig into. I filtered the dataset so it only included removed trees, and 
             uploaded it into Flourish --- a fantastic tool for creating data visualizations. I decided to color code 
             the dots by genus (species made the map too cluttered) and see if there were any patterns.
@@ -122,15 +122,15 @@
         <div class="flourish-embed flourish-chart" data-src="visualisation/21928183"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21928183/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
        
         <p>
-            This observation -- that Ash trees make up a bigger proportion of removed trees than they do of living ones, with
+            This observation -- that ash trees make up a bigger proportion of removed trees than they do of living ones, with
             the opposite true for honey locusts -- led me to a natural reseach question: <strong> why is that?</strong> A quick Google search revealed 
-            that Chicago and its surrounding suburbs have been battling the Emerald Ash Borer since 2002. Since then, the invasive species  
-            has killed millions of ash trees across 35 states. The City of Chicago stopped
-            inoculating its ash trees against the beetle in 2020, but there's no word on Evanston's policy. 
+            that Chicago and its surrounding suburbs <a href = "https://www.cityofevanston.org/government/departments/public-works/public-outreach/emerald-ash-borer"> have been battling the Emerald Ash Borer since 2002. Since then, the invasive species  
+                has killed millions of ash trees across 35 states.</a> The City of Chicago stopped
+            inoculating its ash trees against the beetle in 2020, but Evanston's policy is unclear. 
         </p>
         <p>
             The donut graph also shows that honey locusts are removed at a disproportionately low rate compared to 
-            how many of them exist in Evanston. According the the Morton Arboretum, honey locusts are native to the Chicago area
+            how many of them exist in Evanston. According to <a href = "https://mortonarb.org/plant-and-protect/trees-and-plants/honey-locust/" > the Morton Arboretum</a>, honey locusts are native to the Chicago area
             and, if anything, are too common. They reccomend homeowners only plant honey locusts after considering all other options
             that might better enhance species diversity. 
         </p>
@@ -138,7 +138,7 @@
         <p>
             This research explains why the data looks the way it does. If I were to write this into a news story,
             I would dig deeper into Evanston's treatment plan of the Emerald Ash Borer, especially considering the 
-            December 2024 ordinance update that gives the city more control over trees on private property. But I will leave that for another time...
+            December 2024 ordinance update that gives the city more control over trees on private property. But I will leave that for another day...
         </p>
 
 
